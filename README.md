@@ -42,7 +42,7 @@ Obs.: Por motivos didáticos, o arquivo jar foi compilado com usuário e senha d
 
 ## Documentação API
 
-A api é bem simples, contando com apenas 3 endpoints:
+### Endpoints
 
 1. Retorna as informações de um determinado jogo:
   
@@ -164,11 +164,11 @@ A api é bem simples, contando com apenas 3 endpoints:
    GET http://127.0.0.1:8080/api/achievements/{appid}/top10countries
    ```
 
-   - Parâmetros
-       - `appid: String` : O appid do jogo da steam.
+- Parâmetros
+  - `appid: String` : O appid do jogo da steam.
 
-   - Resposta
-     - Uma possível resposta para a requisição acima:
+- Resposta
+   - Uma possível resposta para a requisição acima:
 
        ```
          {
@@ -219,5 +219,13 @@ A api é bem simples, contando com apenas 3 endpoints:
          }
        ```
 
-     - Parâmetros da resposta:
-       - 
+   - Parâmetros da resposta:
+      - `success: Boolean` : Indica se a requisição retornou código `200`.
+      - `message: String` : Mensagem indicando o status ou algum possível erro da requisição.
+      - `amountUserAchievementsByCountry: Object` : Objeto contendo as quantidade de conquistas ordenada de forma decrescente por país.
+      
+### Códigos de retorno
+
+- [`200 - OK`](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200) : Caso a requisição seja bem sucedida.
+- [`400 - Bad Request`](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400) : Caso algum parâmetro passado seja inválido.
+- [`404 - Not Found`](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/404) : Caso os parâmetros sejam válidos, porém nenhum dado foi encontrado baseado nesses valores.

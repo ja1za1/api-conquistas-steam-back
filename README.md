@@ -37,7 +37,7 @@ Navegue até a pasta `src/main/jar`, abra o terminal e digite o comando:
 java -jar api-steam-v1.jar
 ```
 
-Caso a mensagem "Esta rodando" apareça no terminal, a API foi executada com sucesso no endereço: `http://localhost:8080` e está pronta para receber requisições.
+Caso a mensagem "Esta rodando" apareça no terminal, a API foi executada com sucesso no endereço: `http://127.0.0.1:8080` e está pronta para receber requisições.
 
    ![Screenshot 3](assets/screenshot3.png)
 

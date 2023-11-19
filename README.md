@@ -17,7 +17,7 @@ Essa API foi desenvolvida para obter a quantidade de usuários que têm certa qu
 
 1. Baixe ou clone esse repositório com:
    ```
-   git pull https://github.com/ja1za1/api-conquistas-steam-back
+   git clone https://github.com/ja1za1/api-conquistas-steam-back
    ```
 2. Abra o Pgadmin, crie um banco qualquer com nome de `steamIds` e nomeie o usuário `postgres` como dono.
    
